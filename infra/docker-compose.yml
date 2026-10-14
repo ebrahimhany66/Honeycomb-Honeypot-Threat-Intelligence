@@ -1,0 +1,18 @@
+
+services:
+  cowrie:
+    image: cowrie/cowrie:latest
+    container_name: honeycomb-cowrie
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:2222:2222"
+    volumes:
+      - cowrie-var:/cowrie/cowrie-git/var
+    cap_drop:
+      - ALL
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+
+volumes:
+  cowrie-var:
