@@ -1,0 +1,3 @@
+# Team IPs: these must never be blocked, whatever their score.
+# Any change to this file goes in its own reviewed PR.
+whitelist: []
