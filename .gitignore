@@ -1,0 +1,10 @@
+# Real attack data must never be committed
+data/
+*.log
+*.pcap
+cowrie*.json
+
+# Secrets
+.env
+*.pem
+id_*
