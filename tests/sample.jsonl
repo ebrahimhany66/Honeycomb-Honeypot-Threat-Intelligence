@@ -1,0 +1,4 @@
+{"timestamp":"2026-10-12T10:05:00Z","src_ip":"1.2.3.4","session":"a1","eventid":"cowrie.login.failed","username":"root","password":"admin"}
+{"timestamp":"2026-10-12T10:05:03Z","src_ip":"1.2.3.4","session":"a1","eventid":"cowrie.login.success","username":"root","password":"123456"}
+{"timestamp":"2026-10-12T10:05:10Z","src_ip":"1.2.3.4","session":"a1","eventid":"cowrie.command.input","input":"uname -a"}
+{"timestamp":"2026-10-12T10:05:20Z","src_ip":"1.2.3.4","session":"a1","eventid":"cowrie.session.file_download","url":"http://198.51.100.9/x.sh","shasum":"9f2c1d0a5b7e4c3f8a6d2b1e0c9f8a7b6d5e4c3b2a1f0e9d8c7b6a5f4e3d2c1b"}
