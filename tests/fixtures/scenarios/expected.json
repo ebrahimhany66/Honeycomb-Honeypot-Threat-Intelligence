@@ -1,0 +1,71 @@
+{
+  "S1": {
+    "session": "a1b2c3d4e5f6",
+    "label": "attack",
+    "behaviors": [
+      "B01",
+      "B03",
+      "B04",
+      "B05",
+      "B11"
+    ],
+    "campaign": null
+  },
+  "S2": {
+    "session": "b2c3d4e5f6a1",
+    "label": "attack",
+    "behaviors": [
+      "B02",
+      "B08",
+      "B09",
+      "B13"
+    ],
+    "campaign": null
+  },
+  "S3": {
+    "session": "c3d4e5f6a1b2",
+    "label": "attack",
+    "behaviors": [
+      "B02",
+      "B08",
+      "B09"
+    ],
+    "campaign": "C1"
+  },
+  "S4": {
+    "session": "d4e5f6a1b2c3",
+    "label": "attack",
+    "behaviors": [
+      "B02",
+      "B08",
+      "B09"
+    ],
+    "campaign": "C1"
+  },
+  "S5": {
+    "session": "e5f6a1b2c3d4",
+    "label": "not_attack",
+    "behaviors": [],
+    "campaign": null
+  },
+  "S6": {
+    "session": "f6a1b2c3d4e5",
+    "label": "not_attack",
+    "behaviors": [],
+    "campaign": null
+  },
+  "_campaigns": {
+    "C1": {
+      "sessions": [
+        "S3",
+        "S4"
+      ],
+      "rules": [
+        "C01",
+        "C02",
+        "C03"
+      ],
+      "confidence": "high"
+    }
+  }
+}
