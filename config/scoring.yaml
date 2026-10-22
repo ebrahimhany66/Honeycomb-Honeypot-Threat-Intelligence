@@ -1,0 +1,15 @@
+# Draft scoring table. Final values are tuned in Stage 3.
+version: 1
+max_score: 100
+thresholds:
+  monitor: 40          # 40-69: watch closely
+  block_candidate: 70  # 70+: recommend a block (needs analyst approval)
+evidence:              # each piece of evidence counts once
+  login_brute_force: 20
+  login_success: 20
+  recon_commands: 10
+  file_download: 25
+  persistence_attempt: 15
+  bad_ip_reputation: 20
+  malicious_file_hash: 25
+  campaign_member: 10
