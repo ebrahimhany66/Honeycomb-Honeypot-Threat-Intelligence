@@ -1,4 +1,4 @@
-from honeycomb.correlation import find_campaigns, normalize_command
+from honeycomb.src.correlation import find_campaigns, normalize_command
 
 def S(sid, ip, **kw):
     return {"session_id": sid, "src_ip": ip, "hashes": [], "urls": [], "commands": [], **kw}
