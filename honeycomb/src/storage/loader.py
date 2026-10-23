@@ -73,3 +73,4 @@ def load_file(db_path: str, log_path: str) -> dict:
 if __name__ == "__main__":
     if len(sys.argv) > 2:
         print(load_file(sys.argv[1], sys.argv[2]))
+        
