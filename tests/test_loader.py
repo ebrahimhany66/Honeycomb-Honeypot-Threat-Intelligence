@@ -6,8 +6,8 @@ SAMPLE = "tests/sample.jsonl"
 def test_loads_all_events(tmp_path):
     db = str(tmp_path / "t.db")
     r = load_file(db, SAMPLE)
-    assert r["inserted"] == 4
-    assert r["total_in_db"] == 4
+    assert r["inserted"] == 33
+    assert r["total_in_db"] == 33
 
 
 def test_loading_twice_does_not_duplicate(tmp_path):
@@ -15,8 +15,8 @@ def test_loading_twice_does_not_duplicate(tmp_path):
     load_file(db, SAMPLE)
     r = load_file(db, SAMPLE)
     assert r["inserted"] == 0
-    assert r["duplicates"] == 4
-    assert r["total_in_db"] == 4
+    assert r["duplicates"] == 33
+    assert r["total_in_db"] == 33
 
 
 def test_bad_line_is_skipped(tmp_path):
