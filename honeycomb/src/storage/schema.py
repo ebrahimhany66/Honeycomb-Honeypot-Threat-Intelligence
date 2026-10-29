@@ -1,5 +1,3 @@
-# honeycomb/src/storage/schema.py
-
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS events (
     event_id   TEXT PRIMARY KEY,
@@ -17,7 +15,6 @@ CREATE TABLE IF NOT EXISTS events (
 
 CREATE INDEX IF NOT EXISTS idx_events_ip ON events(src_ip);
 CREATE INDEX IF NOT EXISTS idx_events_session ON events(session_id);
-
 CREATE TABLE IF NOT EXISTS intel_cache (
     indicator  TEXT NOT NULL,
     source     TEXT NOT NULL,
@@ -36,6 +33,16 @@ CREATE TABLE IF NOT EXISTS intel_retry_queue (
     updated_at  TEXT NOT NULL,
     PRIMARY KEY (indicator, source)
 );
+
+CREATE TABLE IF NOT EXISTS sessions (
+    session_id    TEXT PRIMARY KEY,
+    src_ip        TEXT,
+    started_at    TEXT,
+    ended_at      TEXT,
+    username      TEXT,
+    command_count INTEGER DEFAULT 0
+);
+
 """
 
 

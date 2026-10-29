@@ -1,0 +1,22 @@
+# Honeycomb - Cowrie on the Azure VM (production honeypot)
+# DO NOT run this on a personal machine.
+# Host port 22 -> Cowrie (container port 2222).
+# The real admin SSH must be moved to another port BEFORE starting this.
+
+services:
+  cowrie:
+    image: cowrie/cowrie@sha256:710f1e4601a663ac8591f58a42b44e4cd3b7ea170c7e6cdb9e54c430a30cd459
+    container_name: honeycomb-cowrie
+    restart: unless-stopped
+    ports:
+      - "22:2222"
+    volumes:
+      - cowrie-var:/cowrie/cowrie-git/var
+    cap_drop:
+      - ALL
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+
+volumes:
+  cowrie-var:
